@@ -1,5 +1,7 @@
 # Fitness Calculator
 
+👉 **[Live Demo](https://bconard36.github.io/Fitness-Calculator-Programs/)**
+
 This repository contains a **Fitness Calculator** program I originally wrote in **Python** and later expanded into a **web-based application** using **JavaScript, HTML, and CSS**.  
 
 The calculator validates user input and computes key health and fitness metrics, including **BMI (Body Mass Index)**, **BMR (Basal Metabolic Rate)**, and **TDEE (Total Daily Energy Expenditure)**.  

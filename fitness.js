@@ -7,6 +7,9 @@ const MODERATELY_ACTIVE = 1.55
 const VERY_ACTIVE = 1.725
 const EXTRA_ACTIVE = 1.9
 
+// Gets user input for height in inches
+// Validates height is within specific parameters
+// Displays message if input is invalid
 function getHeight() {
     const heightInput = document.getElementById("height");
     const heightMessage = document.getElementById("heightMessage");
@@ -22,7 +25,9 @@ function getHeight() {
     }
 }
 
-
+// Get users input for weight in pounds
+// Validates weight is within specific parameters
+// Displays message if input is invalid
 function getWeight() {
     const weightInput = document.getElementById("weight");
     const weightMessage = document.getElementById("weightMessage");
@@ -38,7 +43,9 @@ function getWeight() {
     }
 }
 
-
+// Gets user input for age
+// Validates age is within specific parameters
+// Displays message if input is invalid
 function getAge() {
     const ageInput = document.getElementById("age");
     const ageMessage = document.getElementById("ageMessage");
@@ -54,7 +61,9 @@ function getAge() {
         }
     }
 
-
+// Get users input for gender
+// Validates gender input is a string containing a specific character
+// Displays message if input is invalid
 function getGender() {
     const genderInput = document.getElementById("gender");
     const genderMessage = document.getElementById("genderMessage");
@@ -70,7 +79,9 @@ function getGender() {
     }
 }
 
-
+// Gets user input for activity level
+// Validates input is an integer within a specific range
+// Displays message if input is invalid
 function getActivity() {
     const activitySelect = document.getElementById("activityChooser");
     const activityMessage = document.getElementById("activityMessage");
@@ -85,28 +96,28 @@ function getActivity() {
     }
 }
 
-
+// Converts user input for height from inches to meters
 function calcMetricHeight(height) {
     let metricHeight = 0.0;
     metricHeight = height * METER_CONVERSION;
     return metricHeight;
 }
 
-
+// Converts user input for weight from pounds to kilograms
 function calcMetricWeight(weight) {
     let metricWeight = 0.0;
     metricWeight = weight / KILOGRAM_CONVERSION;
     return metricWeight;
 }
 
-
+// Calculates BMI 
 function calcBMI(metricWeight, metricHeight) {
     let bmi = 0.0;
     bmi = metricWeight / (metricHeight ** 2);
     return bmi;
 }
 
-
+// Calculates BMR
 function calcBMR(gender, metricWeight, metricHeight, age) {
     let bmr = 0.0;
     if(gender == 'm' || gender == 'M') {
@@ -119,7 +130,7 @@ function calcBMR(gender, metricWeight, metricHeight, age) {
     return bmr;
 }
 
-
+// Calcuates TDEE (Total Daily Energy Expenditure
 function calcDaily(activity, bmr) {
     let daily = 0;
      
@@ -138,7 +149,8 @@ function calcDaily(activity, bmr) {
     return daily;
 }
 
-
+// Confirms user inputs are valid and calculates the promised values 
+// Prints the results to the screen for the user to see 
 function handleSubmit() {
     const height = getHeight();
     const weight = getWeight();

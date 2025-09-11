@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 5px; 
+}
+
+p {
+    padding-bottom: 30px;
+}
+
+#container {
+    border: 2px solid #000000;
+    padding: 2px;
+    margin: 10px;
+}
+
+ol {
+    border: 2px dashed #000000;
+    list-style-type: circle;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+li {
+    text-align: left; 
+    margin: 5px 25px; 
+    padding: 2px 2px; 
+}
+
+img {
+    display: inline;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.results {
+    display: block;
+    justify-content: space-around;
+    padding: 3px 0px;
+    margin: 5px 0px;
+}
+
+#submitMessage {
+    display: block;
+    margin: 15px auto;
+    padding: 3px 0px;
+}
+
+.metrics, .activity {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 10px; 
+}
+
+input {
+    border: 1px solid #dfdfe2;
+    padding: 7px;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+#activityChooser {
+    padding: 7px;
+    width: 60%; 
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.button_container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+button {
+    font-size: 1rem;
+    max-width: 100px;
+    padding: 5px;
+    border: 2px solid #040720;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #040720;
+    color: white;
+}
+
+
+

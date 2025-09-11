@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fitness &amp; Expenditure Calculator</title>
+        <link rel="stylesheet" href="fitness_styles.css">
+        <script src="fitness.js"></script>
+    </head>
+
+    <body>
+       
+            <div id="container">
+            
+                <header>
+                    <img id="dumbbell" class="logo" src="images/fitness_dumbbell.svg" alt="a dumbbell graphic">
+                    <img id="calculator" class="logo" src="images/calculator.svg" alt="calculator graphic">
+                </header>
+
+        <main>
+
+                <h1>Fitness &amp; Expenditure Calculator</h1>
+                <p>Calculate your BMI (Body Mass Index), BMR (Basal Metabolic Rate), and TDEE (Total Daily Energy Expenditure)</p>
+
+                <ol id="terms">
+
+                    <li><strong>Body Mass Index (BMI):</strong> 
+                        An estimation of body fat percentage based on an individual's height and weight</li>
+
+                    <li><strong>Basal Metabolic Rate (BMR):</strong> 
+                        The base number of calories burned at rest to support basic life sustaining 
+                        functions (i.e. breathing, circulation, digestion, etc.)</li>
+
+                    <li><strong>Total Daily Energy Expenditure (TDEE): </strong> The total number of calories 
+                        burned in a 24-hour period</li>
+
+                </ol>
+
+
+
+                </table>
+
+                <section id="inputs">
+
+                    <fieldset class="metrics">
+
+                        <legend>Please provide the following values:</legend>
+
+                        <label for="height">Enter Height (in Inches):</label>
+                        <input type="number" id="height" required>
+                        <span id="heightMessage"></span>
+
+                        <label for="weight">Enter Weight (in Pounds):</label>
+                        <input type="number" id="weight" required>
+                        <span id="weightMessage"></span>
+
+                        <label for="age">Enter Age:</label>
+                        <input type="number" id="age" required>
+                        <span id="ageMessage"></span>
+
+                        <label for="gender">Enter Assigned Sex/Gender at Birth:</label>
+                        <input type="text" id="gender" required>
+                        <span id="genderMessage"></span>
+
+                    </fieldset>
+
+                </section>
+
+                <section id="activity">
+
+                    <fieldset class="activity">
+
+                        <legend>Please choose a number corresponding to your activity levels:</legend>
+
+                        <select id="activityChooser" required>
+                            <option value="">Select One</option>
+                            <option value="1">1. Sedentary (little or no exercise)</option>
+                            <option value="2">2. Lightly Active (light exercise/sports 1-3 days/week)</option>
+                            <option value="3">3. Moderately Active (moderate exercise/sports 3-5 days/week)</option>
+                            <option value="4">4. Very Active (hard exercise/sports 6-7 days a week)</option>
+                            <option value="5">5. Extra Active (very hard exercise/sports & a physical job)</option>
+                        </select>
+                        <span id="activityMessage"></span>
+
+                    </fieldset>
+
+                </section>
+
+                    <div class="button_container">
+
+                        <button type="button" value="Submit" id="submit" onclick="handleSubmit();">Submit</button>
+                        <span id="submitMessage"></span>
+
+                    </div>
+
+                <div class="results">
+
+                    <p id="bmiResult"></p>
+                    <p id="bmrResult"></p>
+                    <p id="dailyResult"></p>
+
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

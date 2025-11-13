@@ -1,4 +1,5 @@
-/* ===== Base Page Styling ===== */
+/* Style Rules for All Viewports */
+/* Body Base Style Rules */
 body {
     font-family: "baga", sans-serif;
     font-weight: 400;
@@ -13,7 +14,7 @@ body {
     color: #F8F9FA;
 }
 
-/* ===== Container ===== */
+/* Style Rules for Main Container */
 #container {
     background: rgba(15, 32, 39, 0.85);
     border-radius: 1rem;
@@ -24,7 +25,7 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* ===== Header ===== */
+/* Style Rules for Header */
 header {
     display: flex;
     justify-content: center;
@@ -37,7 +38,7 @@ header svg {
     height: 50px;
 }
 
-/* ===== Headings ===== */
+/* Style Rules For Headers and Text */
 h1 {
     text-align: center;
     color: #F8F9FA;
@@ -51,7 +52,7 @@ p {
     margin-bottom: 1.5rem;
 }
 
-/* ===== Buttons ===== */
+/* Style Rules for Buttons */
 button, .term-button {
     background: #00B4D8;
     color: #0F2027;
@@ -81,7 +82,7 @@ button:hover, .term-button:hover {
     transform: translateY(-2px);
 }
 
-/* ===== Fieldsets & Inputs ===== */
+/* Style Rules for Fieldsets and Inputs */
 fieldset {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.75rem;
@@ -117,7 +118,7 @@ input:focus, select:focus {
     box-shadow: 0 0 8px #00B4D8;
 }
 
-/* ===== Alerts & Messages ===== */
+/* Style Rules for Alerts and Messages */
 .alert {
     color: #E63946;
     font-weight: 600;
@@ -131,7 +132,7 @@ input:focus, select:focus {
     text-align: center;
 }
 
-/* ===== Results ===== */
+/* Style Rules for Results */
 .results {
     margin-top: 1.5rem;
     text-align: center;
@@ -143,7 +144,7 @@ input:focus, select:focus {
     color: #F8F9FA;
 }
 
-/* ===== Modal Base Styles ===== */
+/* Generic Style Rules for Modal Window */
 .modal {
     display: none;
     position: fixed;
@@ -162,7 +163,7 @@ input:focus, select:focus {
     opacity: 1;
 }
 
-/* ===== Modal Content ===== */
+/* Style Rules for Modal Text Content */
 .modal-content {
     background: linear-gradient(145deg, #0F2027, #203A43);
     color: #F8F9FA;
@@ -180,7 +181,7 @@ input:focus, select:focus {
     transform: scale(1);
 }
 
-/* ===== Modal Button ===== */
+/* Style Rules for Modal Close Button */
 .close-button {
     margin-top: 1.5rem;
     padding: 0.6rem 1.4rem;
